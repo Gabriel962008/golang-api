@@ -1,0 +1,28 @@
+POST http://localhost:8000/bank-accounts
+Content-Type: application/json
+
+{  
+    "account_number": "103456-22" 
+}
+
+###
+
+POST http://localhost:8000/bank-accounts/transfer
+Content-Type: application/json
+
+{
+    "to":"51123-15",
+    "from":"75000-12",
+    "amount":90
+}
+
+###
+
+POST http://localhost:8000/bank-accounts/transfer
+Content-Type: application/json
+
+{
+    "to":"75000-12",
+    "from":"51123-15",
+    "amount":90
+}
